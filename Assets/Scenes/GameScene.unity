@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 598952502}
   - component: {fileID: 598952503}
   m_Layer: 5
-  m_Name: LeftLife
+  m_Name: LifePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,8 +469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 540}
-  m_SizeDelta: {x: 960, y: 700}
+  m_AnchoredPosition: {x: -20, y: 480}
+  m_SizeDelta: {x: 860, y: 630}
   m_Pivot: {x: 1, y: 1}
 --- !u!95 &598952503
 Animator:
@@ -527,8 +527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: -110}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 40, y: -92}
+  m_SizeDelta: {x: 80, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1218817868
 MonoBehaviour:
@@ -695,8 +695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 25, y: 180}
-  m_SizeDelta: {x: 0, y: -480}
+  m_AnchoredPosition: {x: 0, y: 205}
+  m_SizeDelta: {x: 0, y: -410}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902575056
 MonoBehaviour:
