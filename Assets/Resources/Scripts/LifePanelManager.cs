@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LifeManager : MonoBehaviour
+public class LifePanelManager : MonoBehaviour
 {
     public GameObject lifeTextObj;
     public string key;
