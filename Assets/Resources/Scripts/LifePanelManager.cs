@@ -35,7 +35,7 @@ public class LifePanelManager : MonoBehaviour
         lifeText.text = life.ToString();
     }
 
-    void Reset()
+    public void Reset()
     {
         life = 20;
         lifeText.text = life.ToString();
