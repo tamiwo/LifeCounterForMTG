@@ -803,6 +803,7 @@ GameObject:
   - component: {fileID: 678329031}
   - component: {fileID: 678329033}
   - component: {fileID: 678329032}
+  - component: {fileID: 678329034}
   m_Layer: 5
   m_Name: LifeSettingPanel
   m_TagString: Untagged
@@ -826,7 +827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 210.49998}
+  m_AnchoredPosition: {x: 0, y: 1068.5}
   m_SizeDelta: {x: 2048, y: 858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678329032
@@ -866,6 +867,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678329030}
   m_CullTransparentMesh: 0
+--- !u!95 &678329034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678329030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c0aa67f2dd0e49f8b2c25a07fea91ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &734413578
 PrefabInstance:
   m_ObjectHideFlags: 0
