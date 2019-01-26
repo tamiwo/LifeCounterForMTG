@@ -16,6 +16,7 @@ public class StartingLifeManeger : MonoBehaviour
     {
         Shape = transform.Find("Shape").gameObject.GetComponent<Text>();
         Shadow = transform.Find("Shadow").gameObject.GetComponent<Text>();
+        Load();
     }
 
     public void UpDown(int value)
