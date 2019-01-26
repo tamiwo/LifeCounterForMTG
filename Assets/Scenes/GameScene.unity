@@ -1177,6 +1177,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468253117}
     m_Modifications:
+    - target: {fileID: 2886198984935459492, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_Name
+      value: RightLifePanel
+      objectReference: {fileID: 0}
     - target: {fileID: 1939230840711726653, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
       propertyPath: m_RootOrder
@@ -1201,11 +1206,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2886198984935459492, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
-        type: 3}
-      propertyPath: m_Name
-      value: RightLifePanel
       objectReference: {fileID: 0}
     - target: {fileID: 2886198984935459494, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
@@ -1292,6 +1292,41 @@ PrefabInstance:
       propertyPath: startingLifeObj
       value: 
       objectReference: {fileID: 845567829}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5c3533619c749bd9a575a4ffa8d2c2, type: 3}
 --- !u!4 &734413579 stripped
@@ -2643,15 +2678,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468253117}
     m_Modifications:
-    - target: {fileID: 1939230840711726653, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2886198984935459492, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
       propertyPath: m_Name
       value: LeftLifePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939230840711726653, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2886198984935459494, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
@@ -2737,6 +2772,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5c3533619c749bd9a575a4ffa8d2c2, type: 3}
