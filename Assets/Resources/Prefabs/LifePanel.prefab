@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2886198984104108266}
   - component: {fileID: 2886198984104108267}
+  - component: {fileID: 3688797334927500239}
   m_Layer: 5
   m_Name: LifeViewPanel
   m_TagString: Untagged
@@ -57,6 +58,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3688797334927500239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886198984104108265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407842977df4f4c3fbbe2b04253e8cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2886198984200045042
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTextObj: {fileID: 2886198984914554722}
   key: Left
+  startingLifeObj: {fileID: 0}
 --- !u!1 &2886198985407321874
 GameObject:
   m_ObjectHideFlags: 0
