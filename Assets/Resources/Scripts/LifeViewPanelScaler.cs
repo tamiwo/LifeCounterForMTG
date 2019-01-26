@@ -12,10 +12,10 @@ public class LifeViewPanelScaler : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void ChangeScale()
+    public void ChangeScale()
     {
-        const string name = "isMinimum";
-        bool isMinimum = animator.GetBool(name);
-        animator.SetBool(name, !isMinimum);
+        const string paramName = "isMinimum";
+        bool isMinimum = animator.GetBool(paramName);
+        animator.SetBool(paramName, !isMinimum);
     }
 }
