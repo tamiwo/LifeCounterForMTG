@@ -10,9 +10,13 @@ public class LifePanelManager : MonoBehaviour
     private Text lifeText;
     private int life;
 
+    public GameObject startingLifeObj;
+    StartingLifeManeger startingLife;
+
     // Start is called before the first frame update
     void Start()
     {
+        startingLife = startingLifeObj.GetComponent<StartingLifeManeger>();
         lifeText = lifeTextObj.GetComponent<Text>();
         Load();
     }
@@ -37,7 +41,7 @@ public class LifePanelManager : MonoBehaviour
 
     public void Reset()
     {
-        life = 20;
+        life = startingLife.Get();
         lifeText.text = life.ToString();
         Save();
     }

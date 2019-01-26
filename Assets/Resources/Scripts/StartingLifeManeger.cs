@@ -39,4 +39,8 @@ public class StartingLifeManeger : MonoBehaviour
         Shadow.text = life.ToString();
     }
 
+    public int Get()
+    {
+        return life;
+    }
 }
