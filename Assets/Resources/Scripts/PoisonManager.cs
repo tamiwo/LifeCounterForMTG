@@ -29,6 +29,7 @@ public class PoisonManager : MonoBehaviour
             bool activeFlag = (i < value);
             counters[i].SetActive(activeFlag);
         }
+        Save();
     }
 
     void Save()
