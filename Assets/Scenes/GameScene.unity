@@ -1352,6 +1352,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407842977df4f4c3fbbe2b04253e8cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &734413581 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7283959016472344300, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 734413578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e98cf8f12245d9b00d20926946430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &748128942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2390,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2886198983543040733}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 734413581}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1689242171
@@ -2956,6 +2990,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5c3533619c749bd9a575a4ffa8d2c2, type: 3}
+--- !u!114 &2886198983543040733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7283959016472344300, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2886198983543040732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e98cf8f12245d9b00d20926946430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2886198983543040734 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3688797334927500239, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
