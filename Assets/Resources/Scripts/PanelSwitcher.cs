@@ -7,7 +7,7 @@ using UnityEngine.UI;
 // パネルの開閉用スクリプト
 // 追加するオブジェクトには"isOpen"のboolで開閉するAnimatorを
 // Componentに追加しておく
-public class PanelSwitch : MonoBehaviour
+public class PanelSwitcher : MonoBehaviour
 {
     Animator animator;
     const string PARAM = "isOpend";//animatorのパラメータ名
