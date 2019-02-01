@@ -1089,6 +1089,7 @@ GameObject:
   - component: {fileID: 678329033}
   - component: {fileID: 678329032}
   - component: {fileID: 678329034}
+  - component: {fileID: 678329035}
   m_Layer: 5
   m_Name: LifeSettingPanel
   m_TagString: Untagged
@@ -1174,6 +1175,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &678329035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678329030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e0544aa61d1c34cb27d35ead1664e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &734413578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2797,6 +2810,7 @@ GameObject:
   - component: {fileID: 2071495767}
   - component: {fileID: 2071495766}
   - component: {fileID: 2071495768}
+  - component: {fileID: 2071495769}
   m_Layer: 5
   m_Name: CreditsPanel
   m_TagString: Untagged
@@ -2880,6 +2894,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2071495769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071495764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e0544aa61d1c34cb27d35ead1664e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2886198983543040732
 PrefabInstance:
   m_ObjectHideFlags: 0
