@@ -22,7 +22,7 @@ public class PoisonManager : MonoBehaviour
         if (poison != 0)
         {
             //poisonパネルを表示する
-            lifePanelScaler.SetBool("isMinimum", true);
+            lifePanelScaler.SetBool("isOpend", true);
         }
     }
 
