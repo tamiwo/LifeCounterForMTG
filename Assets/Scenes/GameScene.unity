@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &26903312 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2734611049753123595, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2886198983543040732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e0544aa61d1c34cb27d35ead1664e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &53763925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,18 +1386,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 734413578}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &734413580 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3688797334927500239, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 734413578}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 407842977df4f4c3fbbe2b04253e8cda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &734413581 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7283959016472344300, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
@@ -1661,8 +1661,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2886198983543040734}
-        m_MethodName: ChangeScale
+      - m_Target: {fileID: 26903312}
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1672,8 +1672,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 734413580}
-        m_MethodName: ChangeScale
+      - m_Target: {fileID: 1172576584}
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1774,6 +1774,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1172576584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2734611049753123595, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 734413578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e0544aa61d1c34cb27d35ead1664e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1176070672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,6 +3075,11 @@ PrefabInstance:
       propertyPath: lifeViewPanelObj
       value: 
       objectReference: {fileID: 349750110}
+    - target: {fileID: 3688797334927500239, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2886198984388855430, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
       propertyPath: m_Sprite
@@ -3080,17 +3097,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b68e98cf8f12245d9b00d20926946430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2886198983543040734 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3688797334927500239, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2886198983543040732}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 407842977df4f4c3fbbe2b04253e8cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
