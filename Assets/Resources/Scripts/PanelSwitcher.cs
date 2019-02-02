@@ -11,11 +11,14 @@ public class PanelSwitcher : MonoBehaviour
 {
     Animator animator;
     const string PARAM = "isOpend";//animatorのパラメータ名
+    const string KEY = "isOpen"; //開閉状態を保存するためのキー
+    public bool saveStatus = false;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        Load();
     }
 
     // パネルの開閉状態切替
@@ -26,6 +29,7 @@ public class PanelSwitcher : MonoBehaviour
         bool isOpen = animator.GetBool(PARAM);
         // パネルを開くアニメーション起動
         animator.SetBool(PARAM, !isOpen);
+        Save();
     }
 
     // パネルを開く
@@ -38,6 +42,7 @@ public class PanelSwitcher : MonoBehaviour
         }
         // パネルを開くアニメーション起動
         animator.SetBool(PARAM, true);
+        Save();
     }
 
     // パネルを閉じる
@@ -50,6 +55,24 @@ public class PanelSwitcher : MonoBehaviour
         }
         // パネルを開くアニメーション起動
         animator.SetBool(PARAM, false);
+        Save();
     }
 
+    public void Save()
+    {
+        if (saveStatus == true)
+        {
+            bool isOpen = animator.GetBool(PARAM);
+            PlayerPrefs.SetInt(name + KEY, (isOpen ? 1 : 0));
+        }
+    }
+
+    public void Load()
+    {
+        if (saveStatus == true)
+        {
+            bool isOpen = (PlayerPrefs.GetInt(name + KEY, 0) == 1);
+            animator.SetBool(PARAM, isOpen);
+        }
+    }
 }
