@@ -813,10 +813,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
+  cloudProjectId: 400d338e-8c8a-45b8-aef5-8fc2419aaab5
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: LifeCounterForMTG
+  organizationId: otutama
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
