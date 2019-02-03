@@ -6,8 +6,6 @@ public class PoisonManager : MonoBehaviour
 {
     public string playerName;
     public GameObject[] counters;
-    public GameObject lifeViewPanelObj;
-    Animator lifePanelScaler;
 
     const int MAX = 10;
     const string KEY = "poison";
@@ -17,13 +15,7 @@ public class PoisonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lifePanelScaler = transform.parent.GetComponent<Animator>();
         Load();
-        if (poison != 0)
-        {
-            //poisonパネルを表示する
-            lifePanelScaler.SetBool("isOpend", true);
-        }
     }
 
     public void Set( int value )
