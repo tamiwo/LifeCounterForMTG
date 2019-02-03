@@ -1340,6 +1340,11 @@ PrefabInstance:
       propertyPath: startingLifeObj
       value: 
       objectReference: {fileID: 845567829}
+    - target: {fileID: 2886198984935459493, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
+        type: 3}
+      propertyPath: key
+      value: Right
+      objectReference: {fileID: 0}
     - target: {fileID: 2836570326856598025, guid: 4c5c3533619c749bd9a575a4ffa8d2c2,
         type: 3}
       propertyPath: m_RootOrder
