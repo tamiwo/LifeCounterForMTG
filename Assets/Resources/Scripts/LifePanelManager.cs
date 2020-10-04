@@ -33,7 +33,7 @@ public class LifePanelManager : MonoBehaviour
         PlayerPrefs.SetInt(key + "life", life);
     }
 
-    void Load()
+    public void Load()
     {
         life = PlayerPrefs.GetInt(key + "life", 20);
         lifeText.text = life.ToString();
@@ -44,5 +44,11 @@ public class LifePanelManager : MonoBehaviour
         life = startingLife.Get();
         lifeText.text = life.ToString();
         Save();
+    }
+
+    public void DiceRoll()
+    {
+        // 1〜6の値を表示する
+        lifeText.text = Random.Range(1,7).ToString();
     }
 }
