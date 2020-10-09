@@ -39,31 +39,31 @@ public class ScrollText : MonoBehaviour
         Vector2 scrollValue;
 
         if( diff >= 3 ){
-            scrollValue = -speed*Time.deltaTime*3;
+            scrollValue = speed*Time.deltaTime*3;
         }
         else if( diff > 0 ){
-            scrollValue = -speed*Time.deltaTime*diff;
-        }
-        else if( diff < 0 ){
-            scrollValue = -speed*Time.deltaTime*diff;
+            scrollValue = speed*Time.deltaTime*diff;
         }
         else if ( diff <= -3 ){
-            scrollValue = speed*Time.deltaTime*3;
+            scrollValue = speed*Time.deltaTime*-3;
+        }
+        else if( diff < 0 ){
+            scrollValue = speed*Time.deltaTime*diff;
         }
         else { // (diff == 0)
             Vector2 diffPos = scrollBase.anchoredPosition-startPos;
             if( diffPos.y > 10 ){
-                scrollValue = -diffPos;
+                scrollValue = diffPos;
             }
             else if( diffPos.y < -10 ){
-                scrollValue = -diffPos;
+                scrollValue = diffPos;
             }
             else {
                 return;
             }
         }
 
-        scrollBase.anchoredPosition += scrollValue;
+        scrollBase.anchoredPosition -= scrollValue;
         
         // 一定以上スクロールしたら数値を変える
         if( scrollBase.anchoredPosition.y > scrollUnit.y ){
