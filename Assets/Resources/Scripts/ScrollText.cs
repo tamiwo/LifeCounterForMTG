@@ -36,7 +36,6 @@ public class ScrollText : MonoBehaviour
     private void Update() {
 
         int diff = targetValue - currentValue;
-        Debug.Log( targetValue + " : " + currentValue );
         Vector2 scrollValue;
 
         if( diff >= 3 ){
