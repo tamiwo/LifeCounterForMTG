@@ -28,6 +28,9 @@ public class ScrollText : MonoBehaviour
 
     public List<Text> texts;
 
+    private bool isDiceRolling = false;
+    private int diceMax;
+
     private void Awake() {
         currentValue = 0;
         startPos = scrollBase.anchoredPosition;
@@ -74,5 +77,45 @@ public class ScrollText : MonoBehaviour
             scrollBase.anchoredPosition += scrollUnit;
             currentValue += 1;
         }
+
+        if ( isDiceRolling ){
+            // max までスクロールしたら再度1からに戻る
+            if( currentValue >=  diceMax ){
+                DiceRoll(diceMax);
+            }
+        }
+    }
+
+    public void DiceRoll( int max=6 ) {
+
+        diceMax = max;
+        // 上の2つを1と2に変える
+        int setVal = 2;
+        for( int i = 0; i < 2; i++ ){
+            texts[i].text = setVal.ToString();
+            setVal--;
+        }
+
+        // 目標値を max より大きい値 にする
+        targetValue = max*2;
+        // 現在値を0にする(textの表示は変えない)
+        _currentValue = 0;
+
+        isDiceRolling = true;
+    }
+
+    public void DiceStop() {
+        //次の値をランダムに決めて止める
+        int randVal =  Random.Range(1,diceMax+1);
+        int setVal = randVal + 1;
+        for( int i = 0; i < 2; i++ ){
+            texts[i].text = setVal.ToString();
+            setVal--;
+        }
+        // 現在の値を目標値にする
+        _currentValue = randVal - 1;
+        targetValue = randVal;
+
+        isDiceRolling = false;
     }
 }
