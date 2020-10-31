@@ -594,7 +594,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 1
 --- !u!114 &334188342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 1
 --- !u!114 &1019277018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,7 +2954,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 1
 --- !u!114 &1263984273
 MonoBehaviour:
   m_ObjectHideFlags: 0
