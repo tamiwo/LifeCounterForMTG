@@ -106,16 +106,18 @@ public class ScrollText : MonoBehaviour
 
     public void DiceStop() {
         //次の値をランダムに決めて止める
-        int randVal =  Random.Range(1,diceMax+1);
-        int setVal = randVal + 1;
+        SetValue(Random.Range(1,diceMax+1));
+        isDiceRolling = false;
+    }
+
+    public void SetValue( int value ) {
+        int setVal = value + 1;
         for( int i = 0; i < 2; i++ ){
             texts[i].text = setVal.ToString();
             setVal--;
         }
         // 現在の値を目標値にする
-        _currentValue = randVal - 1;
-        targetValue = randVal;
-
-        isDiceRolling = false;
+        _currentValue = value - 1;
+        targetValue = value;
     }
 }

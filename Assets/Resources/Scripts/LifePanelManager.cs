@@ -34,7 +34,7 @@ public class LifePanelManager : MonoBehaviour
     public void Load()
     {
         life = PlayerPrefs.GetInt(key + "life", 20);
-        lifeText.targetValue = life;
+        lifeText.SetValue(life);
     }
 
     public void Reset()
