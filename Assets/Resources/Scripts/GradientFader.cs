@@ -11,7 +11,7 @@ public class GradientFader : MonoBehaviour
     private float alphaDiff;
     private float timer = 0;
 
-    private void FadeIn() {
+    public void FadeIn() {
         // 左から右に現れる
         gradient.alphaTop = 1;
         gradient.alphaBottom = 1;
@@ -23,7 +23,7 @@ public class GradientFader : MonoBehaviour
         timer = duration;
     }
 
-    private void FadeOut() {
+    public void FadeOut() {
         // 左から右に消える
         gradient.alphaTop = 1;
         gradient.alphaBottom = 1;
@@ -33,10 +33,6 @@ public class GradientFader : MonoBehaviour
         gradient.gradientOffsetVertical = 1;
         alphaDiff = 2/duration;
         timer = duration;
-    }
-
-    private void OnEnable() {
-        FadeIn();
     }
 
     void Update() {
