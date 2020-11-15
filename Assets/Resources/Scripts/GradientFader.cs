@@ -9,9 +9,10 @@ public class GradientFader : MonoBehaviour
 
     public GradientAlpha gradient;
     private float alphaDiff;
+    private float fadeTimer = 0;
     private float timer = 0;
 
-    public void FadeIn() {
+    public void FadeIn( float timeOffset = 0 ) {
         // 左から右に現れる
         gradient.alphaTop = 1;
         gradient.alphaBottom = 1;
@@ -20,10 +21,13 @@ public class GradientFader : MonoBehaviour
         gradient.gradientOffsetHorizontal = 1;
         gradient.gradientOffsetVertical = 1;
         alphaDiff = 2/duration;
-        timer = duration;
+        if ( timeOffset > 0 ) {
+            timer = timeOffset;
+        }
+        fadeTimer = duration;
     }
 
-    public void FadeOut() {
+    public void FadeOut( float timeOffset = 0 ) {
         // 左から右に消える
         gradient.alphaTop = 1;
         gradient.alphaBottom = 1;
@@ -32,14 +36,20 @@ public class GradientFader : MonoBehaviour
         gradient.gradientOffsetHorizontal = 1;
         gradient.gradientOffsetVertical = 1;
         alphaDiff = 2/duration;
-        timer = duration;
+        if ( timeOffset > 0 ) {
+            timer = timeOffset;
+        }
+        fadeTimer = duration;
     }
 
     void Update() {
         if( timer > 0 ) {
-            gradient.gradientOffsetHorizontal -= alphaDiff*Time.deltaTime;
             timer -= Time.deltaTime;
+            return;
         }
-        
+        if( fadeTimer > 0 ) {
+            gradient.gradientOffsetHorizontal -= alphaDiff*Time.deltaTime;
+            fadeTimer -= Time.deltaTime;
+        }
     }
 }

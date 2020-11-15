@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2208302586895102668}
   - component: {fileID: 2131143634951418791}
   - component: {fileID: 806525329392384571}
-  - component: {fileID: 1685210948160461613}
   m_Layer: 5
   m_Name: LifeText
   m_TagString: Untagged
@@ -134,7 +133,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2208302586895102668}
         m_MethodName: FadeOut
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -159,44 +158,16 @@ MonoBehaviour:
   events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1685210948160461613}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &1685210948160461613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504767076009724235}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced98e2bd2ce0422bae46868f908cb4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interval: 0.2
-  repeat: 0
-  events:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 2208302586895102668}
         m_MethodName: FadeIn
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 0.2
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1784533803185839091
 GameObject:
@@ -291,7 +262,6 @@ GameObject:
   - component: {fileID: 5373603176298035534}
   - component: {fileID: 2357694256676615576}
   - component: {fileID: 1045537082804882232}
-  - component: {fileID: 1548975055922293593}
   m_Layer: 5
   m_Name: DiceText
   m_TagString: Untagged
@@ -408,14 +378,14 @@ MonoBehaviour:
   events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1548975055922293593}
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 5373603176298035534}
+        m_MethodName: FadeIn
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 0.2
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -437,35 +407,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5373603176298035534}
         m_MethodName: FadeOut
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1548975055922293593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793177592086015740}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced98e2bd2ce0422bae46868f908cb4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interval: 0.2
-  repeat: 0
-  events:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5373603176298035534}
-        m_MethodName: FadeIn
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
